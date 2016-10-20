@@ -1,0 +1,147 @@
+<html>
+<style>
+body {
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+h1, h3 {
+color: white;
+font-family:Century Gothic;
+}
+.keiron {
+width: 350px;
+    height: 200px; 
+font-family:Century Gothic;
+border-left: 6px solid red;
+background-color: red;
+}
+</style>
+<style>
+#welcome{
+    width: 250px;
+    height: 200px;
+    background-color: red;
+    position: relative;
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+font-family: Century Gothic;
+font-size: 50px;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:350px; top:0px; right:000;}
+    50%  {background-color:blue; left:350px; top:350px; right:1000;}
+    75%  {background-color:green; left:0px; top:350px; right:000;}
+    100% {background-color:red; left:0px; top:0px; right:1000;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   { background-color:red; left:0px; top:0px; right:1000;}
+    25%  {background-color:yellow; left:350px; top:0px; right:000;}
+    50%  {background-color:blue; left:200px; top:350px; right:1000;}
+    75%  {background-color:green; left:0px; top:350px; right:000;}
+    100% {background-color:red; left:0px; top:0px; right:1000;}
+}
+</style>
+<body background="images/bg2.jpg">
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="home.html">Home</a>
+  <a href="about me.html">About Me</a>
+  <a href="hobbies.html">Hobbies</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact me.html">Contact Me</a>
+  <a href="index.html"><img src ="images/logo.png" width="250" height="250"></a>
+</div>
+
+<div id="main">
+ 
+  <span style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+}
+</script>
+
+<h1 style="color:white;" align="right"> Contact Me </h1>
+<hr>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<center><div class="keiron">
+<a href="https://www.facebook.com/keiron.adriano" "target="_blank"> <img src="images/fb.png" "target="_blank"alt="Fb Page" height ="100" width="100"></a>
+<a href="https://twitter.com/keironadriano" "target="_blank"> <img src="images/twitter.png" "target="_blank" alt="Twitter Page" height ="100" width="100"></a>
+<a href="https://www.instagram.com/keironadriano/" "target="_blank"> <img src="images/instagram.png" "target="_blank" alt="Instagram Page Page" height ="100" width="100"></a>
+<br>
+<h3>Telephone: (02) 816 7517</h3>
+<h3>Cellphone: (0917) 274 6405</h3>
+</div>
+</center>
+
+</body>
+</html>

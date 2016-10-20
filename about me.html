@@ -1,0 +1,149 @@
+<html>
+<style>
+body {
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.rotate90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+div.kei {
+    position: absolute;
+    left: 500;
+	top: 250;
+    width: 500px;
+	height: 150px;
+    border: 6px solid black;
+	background-color: red;
+	font-family:Century Gothic;
+	color: white;
+	font-size: 90%;
+}
+.adri {
+	border: 6px solid black;
+	background-color: red;
+	font-family:Century Gothic;
+	color: white;
+	font-size: 90%;
+	position: absolute;
+    left: 500;
+	top: 1000;
+    width: 500px;
+	
+}
+div.keir {
+    position: absolute;
+    left: 500;
+	top: 700;
+    width: 500px;
+	height: 60px;
+    border: 6px solid black;
+	background-color: red;
+	font-family:Century Gothic;
+	color: white;
+	font-size: 90%;
+}
+</style>
+<body background="images/bg2.jpg">
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="home.html">Home</a>
+  <a href="about me.html">About Me</a>
+  <a href="hobbies.html">Hobbies</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact me.html">Contact Me</a>
+  <a href="index.html"><img src ="images/logo.png" width="250" height="250"></a>
+</div>
+<div id="main">
+  <span style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776;</span>
+</div>
+<h1 style="color:white;" align="right"> Personal Info </h1>
+<hr>
+
+<br><br><br><br>
+<img src="images/pic4.jpg" height ="250" width="350" class="rotate90">
+<div class="kei">
+Hi! my name is Keiron Adriano, and I enjoy meeting new people and finding ways to help them have an uplifting experience. I am currently studying BSBA - Major in Marketing Management at Far Eastern University - Makati. I am a simple guy with endless dreams that haven't been fulfilled yet. I am the type of guy that is quiet and doesn't talk alot if we are not yet friends, but if you get to know me you will always laugh when I am around. Know me more by browsing by my site, hope you will enjoy!
+</div>
+<h1 style="color:white;" align="right"> Education </h1>
+<hr>
+
+
+<img src="images/school1.png" height ="300" width="300" border="5">
+<div class="keir">
+2001 -  2012 <br>
+Since 2001 (Kindergarten) I already studied in SMA which I love so very much because up until 2012 (4th Year) I was with this school.
+</div>
+<br>
+<br>
+<br>
+
+<img src="images/school2.jpg" height ="300" width="300" border="5">
+<div class="adri">
+2012 - Present <br>
+Although the time was shorter compared to my gradeschool - highschool stay in my first school, FEU - Makati was one of the best experiences that I have. I would always be thankful to this school.
+</div>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+}
+</script>
+   
+</body>
+</html>

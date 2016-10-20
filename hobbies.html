@@ -1,0 +1,118 @@
+<html>
+<style>
+body {
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+div.kei {
+    position: absolute;
+    left: 500;
+	top: 250;
+    width: 500px;
+    border: 6px solid black;
+	background-color: red;
+	font-family:Century Gothic;
+	color: white;
+	font-size: 90%;
+}
+.adri {
+	border: 6px solid black;
+	background-color: red;
+	font-family:Century Gothic;
+	color: white;
+	font-size: 70%;
+	position: absolute;
+    left: 500;
+	top: 410;
+    width: 500px;
+	
+}
+</style>
+<body background="images/bg2.jpg">
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="home.html">Home</a>
+  <a href="about me.html">About Me</a>
+  <a href="hobbies.html">Hobbies</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact me.html">Contact Me</a>
+  <a href="index.html"><img src ="images/logo.png" width="250" height="250"></a>
+</div>
+<div id="main">
+<span style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776;</span>
+</div>
+
+<h1 style="color:white;" align="right"> Hobbies </h1>
+<hr>
+
+<img src="images/studying.jpg" height ="200" width="350">
+<div class="kei">
+I love studying, this is one of my favorites among my other hobbies. It is just the best, most specially when I am studying for my ECOM SUBJECT!
+</div>
+<br><br>
+<img src="images/dota.png" height ="200" width="350">
+<div class="adri">
+Dota 2 is a free-to-play multiplayer online battle arena (MOBA) video game developed and published by Valve Corporation for Microsoft Windows, OS X, and Linux. The game is the stand-alone sequel to Defense of the Ancients (DotA)<br><br>
+This is one of the first games I have ever played since I was grade 6, and up until now I am still playing this online game, I don't know but theres just something in this game that makes you wanna play it all over again even if theres nothing new you just wanna be better and better everyday.
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+}
+</script>
+   
+</body>
+</html>
